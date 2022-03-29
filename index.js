@@ -1,0 +1,24 @@
+// Import stylesheets
+import './style.css';
+
+// Write Javascript code!
+const appDiv = document.getElementById('app');
+appDiv.innerHTML = `<h1>JS Starter</h1>`;
+
+const numeroAdivinhacao = 7;
+let chute = "";
+let acertou = false;
+
+for(let contador = 0; contador < 3; contador++){    
+    chute = prompt("Tente adivinhar o número de 0 a 10:");
+    if(chute == numeroAdivinhacao){
+        alert(`Parabéns, você acertou! O número era ${numeroAdivinhacao}.`);
+        acertou = true;
+        break;
+    }
+    alert("Errado!");
+}
+if(!acertou){
+    alert(`Infelizmente, você não acertou. O número era ${numeroAdivinhacao}!`);
+}
+ 
