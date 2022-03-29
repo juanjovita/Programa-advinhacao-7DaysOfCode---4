@@ -1,13 +1,7 @@
-// Import stylesheets
-import './style.css';
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
-
-const numeroAdivinhacao = 7;
-let chute = "";
-let acertou = false;
+const numeroAdivinhacao = Math.floor(Math.random() * (10 - 0 + 1) + 0)
+let chute = ""
+let acertou = false
 
 for(let contador = 0; contador < 3; contador++){    
     chute = prompt("Tente adivinhar o número de 0 a 10:");
